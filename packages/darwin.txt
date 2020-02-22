@@ -1,0 +1,14 @@
+anyenv
+awscli
+hub
+ghq
+z
+kubernetes-cli
+grep
+gnu-sed
+iproute2mac
+mycli
+kubectx
+jq
+skaffold
+peco
