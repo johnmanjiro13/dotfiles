@@ -89,3 +89,5 @@ zstyle ':vcs_info:*' formats '%F{green}[%b]%c%u'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 PROMPT=$PROMPT'${vcs_info_msg_0_}%F{green}${editor_info[keymap]} '
+
+zle_highlight+=(paste:none)
