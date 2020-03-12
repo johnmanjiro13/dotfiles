@@ -49,6 +49,9 @@ setopt share_history
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias gb='git branch'
+alias gc='git checkout'
+alias gl='git log --oneline'
 alias k='kubectl'
 alias kx='kubectx'
 alias kn='kubens'
@@ -74,7 +77,7 @@ source <(kubectl completion zsh)
 
 # anyframe
 zstyle ':anyframe:selector' use fzf
-bindkey 'gb' anyframe-widget-checkout-git-branch
+bindkey '^g^b' anyframe-widget-checkout-git-branch
 bindkey 'gg' anyframe-widget-cd-ghq-repository
 
 # vcs_info
