@@ -1,0 +1,87 @@
+if [ ! -f "$ZDOTDIR"/.zshrc.zwc -o "$ZDOTDIR"/.zshrc -nt "$ZDOTDIR"/.zshrc.zwc ]; then
+  zcompile "$ZDOTDIR"/.zshrc
+fi
+
+umask 022
+bindkey -e
+
+autoload -Uz compinit && compinit
+autoload -Uz colors && colors
+autoload -Uz vcs_info
+autoload -Uz add-zsh-hook
+autoload -Uz url-quote-magic
+
+
+zstyle ':prezto:module:git:alias' skip 'yes'
+if [ ! -f "${HOME}/.zgen/zgen.zsh" ]; then
+  git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+fi
+
+# zgen configuration
+source "$HOME/.zgen/zgen.zsh"
+if ! zgen saved; then
+  zgen prezto prompt theme 'damoekri'
+  zgen prezto
+  zgen prezto editor
+  zgen prezto prompt
+  zgen prezto completion
+
+  zgen load zsh-users/zsh-completions
+  zgen load zdharma/fast-syntax-highlighting
+  zgen load rupa/z
+  zgen load mollifier/anyframe
+  zgen load zsh-users/zsh-autosuggestions
+  zgen load jonmosco/kube-ps1
+
+  zgen save
+fi
+
+# option
+setopt correct
+setopt no_beep
+setopt magic_equal_subst
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
+setopt prompt_subst
+setopt share_history
+
+# alias
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias k='kubectl'
+alias kx='kubectx'
+alias kn='kubens'
+alias d='docker'
+alias dc='docker-compose'
+alias tf='terraform'
+alias grep='grep --color=auto'
+alias mysql='mycli'
+alias gcc='gcc -Wall'
+alias sk='skaffold'
+alias ks='kustomize'
+alias kp='kube-prompt'
+alias jq='jq -C'
+alias tffmt="terraform fmt -write=true -recursive"
+
+if [ -z "$_kubeps1" ]; then
+  PROMPT='$(kube_ps1)'$PROMPT
+  _kubeps1=true
+fi
+
+# enable kubectl completion
+source <(kubectl completion zsh)
+
+# anyframe
+zstyle ':anyframe:selector' use fzf
+bindkey 'gb' anyframe-widget-checkout-git-branch
+bindkey 'gg' anyframe-widget-cd-ghq-repository
+
+# vcs_info
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}+"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}[%b]%c%u%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
