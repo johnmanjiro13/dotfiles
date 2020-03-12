@@ -31,3 +31,6 @@ export DOCKER_BUILDKIT=1
 export FZF_DEFAULT_OPTS='
   --layout=reverse --inline-info
 '
+
+# homebrew
+export HOMEBREW_NO_AUTO_UPDATE=1
