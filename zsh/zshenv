@@ -1,0 +1,33 @@
+export DOTPATH="$HOME"/dev/src/github.com/johnmanjiro13/dotfiles
+
+export PATH=~/bin:$PATH
+export PATH=~/location:$PATH
+
+export XDG_CONFIG_HOME="$HOME"/.config
+export XDG_DATA_HOME="$HOME"/.local/share
+export XDG_CACHE_HOME="$HOME"/.cache
+
+# zsh
+export ZDOTDIR=$HOME
+export HISTFILE=~/.zsh_history
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+
+export LANG=ja_JP.UTF-8
+
+export CLICOLOR=1
+
+# z
+export _Z_DATA="$XDG_DATA_HOME/z/history"
+
+# zgen
+export ZGEN_RESET_ON_CHANGE=("$HOME"/.zshrc)
+export ZGEN_PREZTO_LOAD_DEFAULT=0
+
+# docker
+export DOCKER_BUILDKIT=1
+
+# fzf
+export FZF_DEFAULT_OPTS='
+  --layout=reverse --inline-info
+'
