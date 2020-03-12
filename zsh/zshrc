@@ -81,10 +81,11 @@ bindkey '^g^b' anyframe-widget-checkout-git-branch
 bindkey 'gg' anyframe-widget-cd-ghq-repository
 
 # vcs_info
+PROMPT='%F{cyan}$(prompt-pwd) '
 zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}+"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{green}[%b]%c%u%f"
+zstyle ':vcs_info:git:*' stagedstr '%F{yellow}+'
+zstyle ':vcs_info:git:*' unstagedstr '%F{red}+'
+zstyle ':vcs_info:*' formats '%F{green}[%b]%c%u'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
-RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
+PROMPT=$PROMPT'${vcs_info_msg_0_}%F{green}${editor_info[keymap]} '
