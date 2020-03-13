@@ -46,12 +46,13 @@ setopt prompt_subst
 setopt share_history
 
 # alias
+alias bd='cd ..'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias gb='git branch'
 alias gc='git checkout'
-alias gl='git log --oneline'
+alias gl='git l'
 alias gp='git pull'
 alias k='kubectl'
 alias kx='kubectx'
