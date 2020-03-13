@@ -67,11 +67,6 @@ alias kp='kube-prompt'
 alias jq='jq -C'
 alias tffmt="terraform fmt -write=true -recursive"
 
-if [ -z "$_kubeps1" ]; then
-  PROMPT='$(kube_ps1)'$PROMPT
-  _kubeps1=true
-fi
-
 # enable kubectl completion
 source <(kubectl completion zsh)
 
@@ -91,3 +86,8 @@ precmd () { vcs_info }
 PROMPT=$PROMPT'${vcs_info_msg_0_}%F{green}${editor_info[keymap]} '
 
 zle_highlight+=(paste:none)
+
+if [ -z "$_kubeps1" ]; then
+  PROMPT='$(kube_ps1)'$PROMPT
+  _kubeps1=true
+fi
