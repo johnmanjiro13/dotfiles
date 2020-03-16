@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": true,
+    "**/.terraform": true,
+    "**/.__pycache__": true
+  },
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderControlCharacters": true,
+  "editor.formatOnSave": true,
+
+  "workbench.editor.enablePreview": false,
+
+  "files.insertFinalNewline": true,
+
+  "go.formatTool": "goimports",
+
+  "python.formatting.provider": "black",
+  "python.formatting.autopep8Path": "",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+
+  "html.format.enable": false
+}
