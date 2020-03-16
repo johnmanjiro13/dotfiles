@@ -1,0 +1,14 @@
+[user]
+  name = Ikumi Nakamura
+  email = 
+[core]
+  excludesfile = /Users/ikumi.nakamura/.gitignore_global
+  autocrlf = input
+[alias]
+  l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso -n 30
+[ghq]
+  root = ~/dev/src
+[pull]
+  rebase = true
+[url "git@github.com:"]
+  insteadOf = https://github.com/

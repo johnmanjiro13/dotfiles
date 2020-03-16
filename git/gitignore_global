@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.vscode/*
+
+# rails
+vendor/bundle
+master.key
+.envrc
+
+# node
+node_modules/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
