@@ -1,6 +1,6 @@
 [user]
   name = johnmanjiro13
-  email = 
+  email =
 [core]
   excludesfile = /Users/ikumi.nakamura/.gitignore_global
   autocrlf = input
@@ -8,7 +8,10 @@
   l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso -n 30
 [ghq]
   root = ~/dev/src
+[fetch]
+  prune = true
 [pull]
   rebase = true
+  prune = true
 [url "git@github.com:"]
   insteadOf = https://github.com/
