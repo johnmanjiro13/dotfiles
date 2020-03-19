@@ -54,7 +54,6 @@ alias gb='git branch'
 alias gc='git checkout'
 alias gl='git l'
 alias gp='git pull'
-alias sed='gsed'
 alias k='kubectl'
 alias kx='kubectx'
 alias kn='kubens'
@@ -77,6 +76,9 @@ source <(kubectl completion zsh)
 zstyle ':anyframe:selector' use fzf
 bindkey '^g^b' anyframe-widget-checkout-git-branch
 bindkey 'gg' anyframe-widget-cd-ghq-repository
+
+# GNU commands
+alias sed='gsed'
 
 # vcs_info
 PROMPT='%F{cyan}$(prompt-pwd) '
