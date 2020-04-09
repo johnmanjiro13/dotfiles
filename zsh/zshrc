@@ -11,14 +11,6 @@ autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 autoload -Uz url-quote-magic
 
-# enable complement during typing
-autoload -Uz history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-
-bindkey "^p" history-beginning-search-backward-end
-bindkey "^n" history-beginning-search-forward-end
-
 zstyle ':prezto:module:git:alias' skip 'yes'
 if [ ! -f "${HOME}/.zgen/zgen.zsh" ]; then
   git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
@@ -103,3 +95,10 @@ if [ -z "$_kubeps1" ]; then
   PROMPT='$(kube_ps1)'$PROMPT
   _kubeps1=true
 fi
+
+# enable complement during typing
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^p" history-beginning-search-backward-end
+bindkey "^n" history-beginning-search-forward-end
