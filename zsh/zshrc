@@ -68,6 +68,11 @@ alias kp='kube-prompt'
 alias jq='jq -C'
 alias tffmt="terraform fmt -write=true -recursive"
 
+if [ -d "$ANYENV_DEFINITION_ROOT" ] && [ -z "$_ANYENV_LOADED" ]; then
+  eval "$(anyenv init -)"
+  export _ANYENV_LOADED=1
+fi
+
 # enable kubectl completion
 source <(kubectl completion zsh)
 
