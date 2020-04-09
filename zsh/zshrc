@@ -67,6 +67,7 @@ alias ks='kustomize'
 alias kp='kube-prompt'
 alias jq='jq -C'
 alias tffmt="terraform fmt -write=true -recursive"
+alias relogin="exec $SHELL -l"
 
 if [ -d "$ANYENV_DEFINITION_ROOT" ] && [ -z "$_ANYENV_LOADED" ]; then
   eval "$(anyenv init -)"
