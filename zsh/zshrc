@@ -46,6 +46,7 @@ setopt share_history
 
 # alias
 alias bd='cd ..'
+alias ll='ls -laF'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
