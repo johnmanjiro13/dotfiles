@@ -17,6 +17,10 @@ export LANG=ja_JP.UTF-8
 
 export CLICOLOR=1
 
+# go
+export GOPATH="$HOME"/go
+export PATH=$GOPATH/bin:$PATH
+
 # anyenv
 export ANYENV_DEFINITION_ROOT=${XDG_CONFIG_HOME}/anyenv/anyenv-install
 
