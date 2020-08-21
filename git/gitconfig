@@ -11,7 +11,6 @@
 [fetch]
   prune = true
 [pull]
-  rebase = true
   prune = true
 [url "git@github.com:"]
   insteadOf = https://github.com/

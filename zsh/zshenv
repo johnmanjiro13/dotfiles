@@ -35,7 +35,7 @@ export ZGEN_RESET_ON_CHANGE=("$HOME"/.zshrc)
 export ZGEN_PREZTO_LOAD_DEFAULT=0
 
 # docker
-export DOCKER_BUILDKIT=1
+# export DOCKER_BUILDKIT=1
 
 # fzf
 export FZF_DEFAULT_OPTS='
