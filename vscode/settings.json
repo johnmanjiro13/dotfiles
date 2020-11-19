@@ -23,5 +23,9 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
 
-  "html.format.enable": false
+  "html.format.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.singleQuote": true
 }
