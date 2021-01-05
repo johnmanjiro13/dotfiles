@@ -12,3 +12,4 @@ kubectx
 jq
 skaffold
 peco
+tree
