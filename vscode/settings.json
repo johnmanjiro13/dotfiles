@@ -27,5 +27,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "prettier.disableLanguages": [
+    "markdown",
+],
 }
