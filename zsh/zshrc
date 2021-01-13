@@ -81,7 +81,7 @@ source <(kubectl completion zsh)
 # anyframe
 zstyle ':anyframe:selector' use fzf
 bindkey '^g^b' anyframe-widget-checkout-git-branch
-bindkey 'gg' anyframe-widget-cd-ghq-repository
+bindkey '^g^g' anyframe-widget-cd-ghq-repository
 
 # GNU commands
 alias sed='gsed'
