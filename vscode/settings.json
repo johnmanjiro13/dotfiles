@@ -11,6 +11,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.renderControlCharacters": true,
   "editor.formatOnSave": true,
+  "editor.fontSize": 13,
 
   "workbench.editor.enablePreview": false,
 
@@ -30,5 +31,4 @@
   "prettier.singleQuote": true,
   "prettier.disableLanguages": [
     "markdown",
-],
-}
+]
