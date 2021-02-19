@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PLATFORM=$(uname); export PLATFORM
+PLATFORM=$(uname); readonly PLATFORM
 
-install_homebrew() {
+function install_homebrew() {
   if [ $PLATFORM = "Darwin" ]; then
     if [ ! which brew &> /dev/null ]; then
       ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -10,14 +10,10 @@ install_homebrew() {
   fi
 }
 
-REQUIREMENTS="${DOTPATH}/packages/requirements.txt"
-DARWIN="${DOTPATH}/packages/darwin.txt"
+DARWIN="${DOTPATH}/packages/darwin.txt"; readonly DARWIN
 
 if [ $PLATFORM = "Darwin" ]; then
   install_homebrew
-  for package in `cat "$REQUIREMENTS"`; do
-    brew install "$package"
-  done
   for package in `cat "$DARWIN"`; do
     brew install "$package"
   done

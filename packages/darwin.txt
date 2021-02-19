@@ -13,3 +13,4 @@ jq
 skaffold
 peco
 tree
+zsh
