@@ -1,5 +1,9 @@
 #!/bin/bash
 
+mkdir -p ~/.tmux
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ln -sf "$DOTPATH"/tmux/tmux.conf ~/.tmux.conf
 ln -sf "$DOTPATH"/tmux/gitmux.conf ~/.tmux/gitmux.conf
 

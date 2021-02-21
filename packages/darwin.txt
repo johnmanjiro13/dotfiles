@@ -13,4 +13,5 @@ jq
 skaffold
 peco
 tree
+tmux
 zsh
