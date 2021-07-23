@@ -10,6 +10,10 @@ function install_homebrew() {
   fi
 }
 
+function install_rust() {
+  curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+}
+
 DARWIN="${DOTPATH}/packages/darwin.txt"; readonly DARWIN
 
 if [ $PLATFORM = "Darwin" ]; then
@@ -17,6 +21,7 @@ if [ $PLATFORM = "Darwin" ]; then
   for package in `cat "$DARWIN"`; do
     brew install "$package"
   done
+  install_rust
 else
   echo "Only Darwin is supported"
   exit 1
