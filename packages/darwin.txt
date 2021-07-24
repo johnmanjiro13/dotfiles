@@ -15,3 +15,4 @@ peco
 tree
 tmux
 zsh
+nkf
