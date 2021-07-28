@@ -21,7 +21,7 @@ function initialize () {
 
 function main() {
   if [ -x "$(which curl)" ] && [ -x "$(which git)" ]; then
-    download_dotfiles && deploy_dotfiles && initialize
+    download_dotfiles && initialize && deploy_dotfiles
   else
     echo "Please install dependencies: ('git', 'curl')"
     exit 1
