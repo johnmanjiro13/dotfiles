@@ -109,3 +109,9 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^p" history-beginning-search-backward-end
 bindkey "^n" history-beginning-search-forward-end
+
+# for homebrew m1
+ARCH=$(uname -m)
+if [ "$ARCH" = "arm64" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
