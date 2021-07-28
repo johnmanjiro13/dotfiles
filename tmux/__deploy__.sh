@@ -3,7 +3,7 @@
 mkdir -p ~/.tmux
 
 TPM_DIR="~/.tmux/plugins/tpm"; readonly TPM_DIR;
-if [ ! -e "$TPM_DIR" ]; then
+if [ ! -d $TPM_DIR ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
