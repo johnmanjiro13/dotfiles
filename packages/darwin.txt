@@ -16,3 +16,4 @@ tree
 tmux
 zsh
 nkf
+go
