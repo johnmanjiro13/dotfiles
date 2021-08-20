@@ -46,6 +46,7 @@ setopt share_history
 
 # alias
 alias bd='cd ..'
+alias bat='bat --style="header,numbers,grid"'
 alias ll='ls -laF'
 alias rm='rm -i'
 alias cp='cp -i'
