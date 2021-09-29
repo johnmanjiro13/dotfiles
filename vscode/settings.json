@@ -29,6 +29,5 @@
     "source.fixAll.eslint": true
   },
   "prettier.singleQuote": true,
-  "prettier.disableLanguages": [
-    "markdown",
-]
+  "prettier.disableLanguages": ["markdown"]
+}
