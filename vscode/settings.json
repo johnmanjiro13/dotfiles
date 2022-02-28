@@ -10,25 +10,63 @@
   "editor.tabSize": 2,
   "editor.renderWhitespace": "boundary",
   "editor.renderControlCharacters": true,
-  "editor.formatOnSave": true,
   "editor.fontSize": 13,
-
   "workbench.editor.enablePreview": false,
-
-  "files.insertFinalNewline": true,
-
   "go.formatTool": "goimports",
-
   "python.formatting.provider": "black",
   "python.formatting.autopep8Path": "",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
-
-  "html.format.enable": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "prettier.singleQuote": true,
-  "prettier.disableLanguages": ["markdown"],
-  "explorer.autoReveal": false
+  "vscodeGitCommit.template": [
+    "{scope}: {message}"
+  ],
+  "vscodeGitCommit.variables": {
+    "prefix": "keke",
+    "scope": [
+      {
+        "label": "feat",
+        "detail": "Select when creating new things"
+      },
+      {
+        "label": "fix",
+        "detail": "Select when fixing a bug"
+      },
+      {
+        "label": "test",
+        "detail": "Select when adding or editing tests"
+      },
+      {
+        "label": "build",
+        "detail": "Select when concerning build change or external dependencies"
+      },
+      {
+        "label": "refactor",
+        "detail": "Select when no new performances or no new functionnality"
+      },
+      {
+        "label": "style",
+        "detail": "Select when working on code style"
+      },
+      {
+        "label": "docs",
+        "detail": "Select when editing documentation"
+      },
+      {
+        "label": "ci",
+        "detail": "Select when editing CI sctiprs"
+      },
+      {
+        "label": "perf",
+        "detail": "Select when working on performances"
+      },
+      {
+        "label": "revert",
+        "detail": "Select when going back"
+      }
+    ]
+  }
 }
