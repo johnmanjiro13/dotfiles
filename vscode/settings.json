@@ -28,6 +28,18 @@
     "prefix": "keke",
     "scope": [
       {
+        "label": "add",
+        "detail": "Select when adding new files"
+      },
+      {
+        "label": "remove",
+        "detail": "Select when removing some files"
+      },
+      {
+        "label": "upgrade",
+        "detail": "Select when upgrading libraries"
+      },
+      {
         "label": "feat",
         "detail": "Select when creating new things"
       },
@@ -40,7 +52,7 @@
         "detail": "Select when adding or editing tests"
       },
       {
-        "label": "build",
+        "label": "chore",
         "detail": "Select when concerning build change or external dependencies"
       },
       {
@@ -62,11 +74,8 @@
       {
         "label": "perf",
         "detail": "Select when working on performances"
-      },
-      {
-        "label": "revert",
-        "detail": "Select when going back"
       }
     ]
-  }
+  },
+  "rust.clippy_preference": "on"
 }
