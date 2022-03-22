@@ -12,11 +12,13 @@
   "editor.renderControlCharacters": true,
   "editor.fontSize": 13,
   "workbench.editor.enablePreview": false,
-  "go.formatTool": "goimports",
+  "files.insertFinalNewline": true,
+  "go.formatTool": "gofmt",
   "python.formatting.provider": "black",
   "python.formatting.autopep8Path": "",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
+  "html.format.enable": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -77,5 +79,11 @@
       }
     ]
   },
-  "rust.clippy_preference": "on"
+  "rust.clippy_preference": "on",
+  "prettier.disableLanguages": ["markdown"],
+  "explorer.autoReveal": false,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
