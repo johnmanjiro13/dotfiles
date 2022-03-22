@@ -45,3 +45,7 @@ export FZF_DEFAULT_OPTS='
 
 # homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
+. "$HOME/.cargo/env"
+if [ "$ARCH" = "arm64" ]; then
+  export PATH=/opt/homebrew/bin:$PATH
+fi
