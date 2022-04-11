@@ -36,7 +36,7 @@ export ZGEN_RESET_ON_CHANGE=("$HOME"/.zshrc)
 export ZGEN_PREZTO_LOAD_DEFAULT=0
 
 # docker
-# export DOCKER_BUILDKIT=1
+export DOCKER_BUILDKIT=1
 
 # fzf
 export FZF_DEFAULT_OPTS='
@@ -45,7 +45,9 @@ export FZF_DEFAULT_OPTS='
 
 # homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
-. "$HOME/.cargo/env"
 if [ "$ARCH" = "arm64" ]; then
   export PATH=/opt/homebrew/bin:$PATH
 fi
+
+# rust
+. "$HOME/.cargo/env"
