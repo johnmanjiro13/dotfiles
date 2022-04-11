@@ -1,6 +1,6 @@
 [user]
   name = johnmanjiro13
-  email =
+  email = 28798279+johnmanjiro13@users.noreply.github.com
 [core]
   excludesfile = /Users/ikumi.nakamura/.gitignore_global
   autocrlf = input
@@ -12,7 +12,7 @@
   prune = true
 [pull]
   prune = true
-[url "git@github.com:"]
+[url "ssh://git@github.com:"]
   insteadOf = https://github.com/
 [init]
 	defaultBranch = main
