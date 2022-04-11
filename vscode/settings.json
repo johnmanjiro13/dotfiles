@@ -36,18 +36,28 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.singleQuote": true,
-  "prettier.disableLanguages": ["markdown"],
+
+  // typescript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // markdown
   "[markdown]": {
     "editor.formatOnSave": false
   },
+  "prettier.disableLanguages": ["markdown"],
 
   // html
   "html.format.enable": false,
 
   // rust
-  "rust.rust-analyzer.path": "",
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
   "rust-analyzer.checkOnSave.command": "clippy",
   "rust.clippy_preference": "on",
 
@@ -71,9 +81,7 @@
   },
 
   // git commit template
-  "vscodeGitCommit.template": [
-    "{scope}: {message}"
-  ],
+  "vscodeGitCommit.template": ["{scope}: {message}"],
   "vscodeGitCommit.variables": {
     "prefix": "keke",
     "scope": [
