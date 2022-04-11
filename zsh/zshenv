@@ -18,9 +18,6 @@ export LANG=ja_JP.UTF-8
 
 export CLICOLOR=1
 
-# node
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
 # go
 export GOPATH="$HOME"/go
 export PATH=$GOPATH/bin:$PATH

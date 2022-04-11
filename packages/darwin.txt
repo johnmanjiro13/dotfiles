@@ -18,3 +18,4 @@ zsh
 nkf
 go
 bat
+nvm
