@@ -21,9 +21,7 @@
   "editor.formatOnSave": true,
 
   // go
-  "[go]": {
-    "formatTool": "gofmt"
-  },
+  "go.formatTool": "gofmt",
 
   // python
   "python.formatting.provider": "black",
@@ -50,6 +48,11 @@
     "editor.formatOnSave": false
   },
   "prettier.disableLanguages": ["markdown"],
+
+  // yaml
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
 
   // html
   "html.format.enable": false,
