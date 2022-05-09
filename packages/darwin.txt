@@ -19,3 +19,4 @@ nkf
 go
 bat
 nvm
+git
