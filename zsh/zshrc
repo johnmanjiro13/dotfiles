@@ -26,7 +26,7 @@ if ! zgen saved; then
   zgen prezto completion
 
   zgen load zsh-users/zsh-completions
-  zgen load zdharma/fast-syntax-highlighting
+  zgen load zdharma-continuum/fast-syntax-highlighting
   zgen load rupa/z
   zgen load mollifier/anyframe
   zgen load zsh-users/zsh-autosuggestions
