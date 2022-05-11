@@ -7,6 +7,7 @@ bindkey -e
 
 autoload -Uz compinit && compinit
 autoload -Uz colors && colors
+autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
@@ -114,7 +115,7 @@ zstyle ':vcs_info:git:*' stagedstr '%F{yellow}+'
 zstyle ':vcs_info:git:*' unstagedstr '%F{red}+'
 zstyle ':vcs_info:*' formats '%F{green}[%b]%c%u'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
-precmd () { vcs_info }
+add-zsh-hook precmd vcs_info 
 PROMPT=$PROMPT'${vcs_info_msg_0_}%F{green}${editor_info[keymap]} '
 
 zle_highlight+=(paste:none)
