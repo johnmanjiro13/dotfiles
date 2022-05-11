@@ -136,6 +136,8 @@ fi
 
 # bookmark
 # this is inspired by https://threkk.medium.com/how-to-use-bookmarks-in-bash-zsh-6b8074e40774
+# make bookmark symbolic link  by `ln -s path/to/certain/directory/with/my/project ~/.bookmarks/@important-project`
+mkdir -p "$HOME/.bookmarks"
 if [ -d "$HOME/.bookmarks" ]; then
   export CDPATH=".:$HOME/.bookmarks"
   alias goto="cd -P"
