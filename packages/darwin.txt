@@ -21,3 +21,5 @@ bat
 nvm
 git
 exa
+fzf
+fd
