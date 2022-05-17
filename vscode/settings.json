@@ -20,6 +20,9 @@
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
 
+  // C, C++
+  "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4}",
+
   // go
   "go.formatTool": "goimports",
 
