@@ -24,3 +24,6 @@ exa
 fzf
 fd
 ripgrep
+asdf
+gpg
+gawk

@@ -87,11 +87,6 @@ alias jq='jq -C'
 alias tffmt="terraform fmt -write=true -recursive"
 alias relogin="exec $SHELL -l"
 
-# anyenv
-if [ -d "$ANYENV_DEFINITION_ROOT" ]; then
-  eval "$(anyenv init -)"
-fi
-
 # z
 if [ ! -e "$XDG_DATA_HOME/z" ]; then
   mkdir -p $XDG_DATA_HOME/z
@@ -162,13 +157,5 @@ function fd-fzf() {
 zle -N fd-fzf
 bindkey "^n" fd-fzf
 
-# nvm
-mkdir -p "$HOME/.nvm"
-export NVM_DIR="$HOME/.nvm"
-if [ "$ARCH" = "arm64" ]; then
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-else
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-fi
+# asdf
+. $(brew --prefix asdf)/libexec/asdf.sh
