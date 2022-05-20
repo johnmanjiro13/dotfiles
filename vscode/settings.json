@@ -50,7 +50,6 @@
   "[markdown]": {
     "editor.formatOnSave": false
   },
-  "prettier.disableLanguages": ["markdown"],
 
   // yaml
   "[yaml]": {
@@ -65,7 +64,6 @@
     "editor.defaultFormatter": "matklad.rust-analyzer"
   },
   "rust-analyzer.checkOnSave.command": "clippy",
-  "rust.clippy_preference": "on",
 
   // terraform
   "[terraform]": {
