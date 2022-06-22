@@ -12,6 +12,7 @@
   prune = true
 [pull]
   prune = true
+	rebase = false
 [url "git@github.com:"]
   insteadOf = https://github.com/
 [init]
