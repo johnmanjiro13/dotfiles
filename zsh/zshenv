@@ -31,6 +31,7 @@ export _Z_DATA="$XDG_DATA_HOME/z/history"
 # zgen
 export ZGEN_RESET_ON_CHANGE=("$HOME"/.zshrc)
 export ZGEN_PREZTO_LOAD_DEFAULT=0
+export fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 
 # docker
 export DOCKER_BUILDKIT=1
