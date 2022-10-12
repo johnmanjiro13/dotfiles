@@ -11,8 +11,8 @@ autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
-autoload -Uz url-quote-magic
-zle -N self-insert url-quote-magic
+# autoload -Uz url-quote-magic
+# zle -N self-insert url-quote-magic
 
 zstyle ':prezto:module:git:alias' skip 'yes'
 if [ ! -f "${HOME}/.zgen/zgen.zsh" ]; then
@@ -157,5 +157,6 @@ function fd-fzf() {
 zle -N fd-fzf
 bindkey "^n" fd-fzf
 
-# asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
+# anyenv
+eval "$(anyenv init -)"
+
