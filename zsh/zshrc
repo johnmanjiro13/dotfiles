@@ -158,5 +158,11 @@ zle -N fd-fzf
 bindkey "^n" fd-fzf
 
 # anyenv
+if type anyenv > /dev/null 2>&1; then
 eval "$(anyenv init -)"
+fi
 
+# direnv
+if type direnv > /dev/null 2>&1; then
+  eval "$(direnv hook zsh)"
+fi
