@@ -83,7 +83,6 @@ alias gcc='gcc -Wall'
 alias sk='skaffold'
 alias ks='kustomize'
 alias kp='kube-prompt'
-alias jq='jq -C'
 alias tffmt="terraform fmt -write=true -recursive"
 alias relogin="exec $SHELL -l"
 
