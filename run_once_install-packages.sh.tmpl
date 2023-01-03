@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# tmux
+mkdir -p ~/.tmux
+TPM_DIR=~/.tmux/plugins/tpm; readonly TPM_DIR;
+if [ ! -d $TPM_DIR ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install cargo-edit
+rustup component add clippy
+
+{{ if eq .chezmoi.os "darwin" }}
+read -r -d '' PACKAGES << 'EOF'
+anyenv
+awscli
+ghq
+z
+kubernetes-cli
+grep
+gnu-sed
+iproute2mac
+mycli
+kubectx
+jq
+skaffold
+peco
+tree
+tmux
+zsh
+nkf
+go
+bat
+git
+exa
+fzf
+fd
+ripgrep
+anyenv
+EOF
+
+for package in `echo $PACKAGES`; do
+  brew install $package
+done
+{{ end }}

@@ -1,0 +1,4 @@
+[edit]
+    command = "code"
+    args = ["--wait"]
+
