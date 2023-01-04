@@ -1,6 +1,18 @@
 ﻿# dotfiles
 
-## Usage
-```bash
-$ curl https://raw.githubusercontent.com/johnmanjiro13/dotfiles/master/etc/setup.sh | bash
+Provisioned by [chezmoi](https://www.chezmoi.io/)
+
+## Installation
+
+### macOS
+
+```shell
+brew install chezmoi
+chezmoi init --apply johnmanjiro13
+```
+
+## Update
+
+```shell
+chezmoi update
 ```
