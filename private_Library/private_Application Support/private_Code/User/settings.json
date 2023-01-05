@@ -61,7 +61,7 @@
 
   // rust
   "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "rust-analyzer.checkOnSave.command": "clippy",
 
@@ -74,69 +74,5 @@
   },
 
   // liveshare
-  "liveshare.authenticationProvider": "GitHub",
-  
-  // copilot
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": false
-  },
-
-  // git commit template
-  "vscodeGitCommit.template": ["{scope}: {message}"],
-  "vscodeGitCommit.variables": {
-    "prefix": "keke",
-    "scope": [
-      {
-        "label": "add",
-        "detail": "Select when adding new files"
-      },
-      {
-        "label": "remove",
-        "detail": "Select when removing some files"
-      },
-      {
-        "label": "upgrade",
-        "detail": "Select when upgrading libraries"
-      },
-      {
-        "label": "feat",
-        "detail": "Select when creating new things"
-      },
-      {
-        "label": "fix",
-        "detail": "Select when fixing a bug"
-      },
-      {
-        "label": "test",
-        "detail": "Select when adding or editing tests"
-      },
-      {
-        "label": "chore",
-        "detail": "Select when concerning build change or external dependencies"
-      },
-      {
-        "label": "refactor",
-        "detail": "Select when no new performances or no new functionnality"
-      },
-      {
-        "label": "style",
-        "detail": "Select when working on code style"
-      },
-      {
-        "label": "docs",
-        "detail": "Select when editing documentation"
-      },
-      {
-        "label": "ci",
-        "detail": "Select when editing CI sctiprs"
-      },
-      {
-        "label": "perf",
-        "detail": "Select when working on performances"
-      }
-    ]
-  }
+  "liveshare.authenticationProvider": "GitHub"
 }
