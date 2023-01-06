@@ -8,7 +8,9 @@ if [ ! -d $TPM_DIR ]; then
 fi
 
 # rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+if ! type rustup > /dev/null 2>&1; then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+fi
 cargo install cargo-edit
 rustup component add clippy
 
@@ -40,6 +42,6 @@ ripgrep
 EOF
 
 for package in `echo $PACKAGES`; do
-  brew install $package
+  HOMEBREW_NO_AUTO_UPDATE=1 brew install $package
 done
 {{ end }}
