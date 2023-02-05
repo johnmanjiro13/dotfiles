@@ -11,7 +11,7 @@ set -x XDG_DATA_HOME $HOME/.local/share
 set -x XDG_CACHE_HOME $HOME/.cache
 
 # go
-if [ (command -v go )]
+if [ (command -v go ) ]
   set -x GOPATH $HOME/go
   set -x PATH $GOPATH/bin $PATH
 end
