@@ -1,6 +1,9 @@
 set -x LANG ja_JP.UTF-8
 set -x CLICOLOR 1
 
+# fish
+set -x GHQ_SELECTOR_OPTS --reverse
+
 # PATH
 set -x PATH $HOME/bin $PATH
 set -x PATH $HOME/.local/bin $PATH
