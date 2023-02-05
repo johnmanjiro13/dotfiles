@@ -122,40 +122,40 @@ function __git_status
         else
             set_color green
         end
-        echo -n "[$branch]"
+        echo -n "$branch"
     end
     if test -n "$commit"
-        echo -n '['(set_color yellow)"$commit]"
+        echo -n (set_color yellow)"$commit"
     end
     if test -n "$action"
         set_color normal
-        echo -n '['(set_color white)':'(set_color -o brred)"$action]"
+        echo -n ' '(set_color white)':'(set_color -o brred)"$action"
     end
     if test $status_ahead -ne 0
-        echo -n '['(set_color brmagenta)'⬆]'
+        echo -n ' '(set_color brmagenta)'⬆'
     end
     if test $status_behind -ne 0
-        echo -n '['(set_color brmagenta)'⬇]'
+        echo -n ' '(set_color brmagenta)'⬇'
     end
     if test $status_stashed -ne 0
-        echo -n '['(set_color cyan)'✭]'
+        echo -n ' '(set_color cyan)'✭'
     end
     if test $status_added -ne 0
-        echo -n '['(set_color green)'✚]'
+        echo -n ' '(set_color green)'✚'
     end
     if test $status_deleted -ne 0
-        echo -n '['(set_color red)'✖]'
+        echo -n ' '(set_color red)'✖'
     end
     if test $status_modified -ne 0
-        echo -n '['(set_color blue)'✱]'
+        echo -n ' '(set_color blue)'✱'
     end
     if test $status_renamed -ne 0
-        echo -n '['(set_color magenta)'➜]'
+        echo -n ' '(set_color magenta)'➜'
     end
     if test $status_unmerged -ne 0
-        echo -n '['(set_color yellow)'═]'
+        echo -n ' '(set_color yellow)'═'
     end
     if test $status_untracked -ne 0
-        echo -n '['(set_color white)'◼]'
+        echo -n ' '(set_color white)'◼'
     end
 end
