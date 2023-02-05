@@ -29,4 +29,4 @@ abbr -a kn kubens
 abbr -a d docker
 abbr -a dc docker compose
 abbr -a mysql mycli
-
+abbr -a sed gsed
