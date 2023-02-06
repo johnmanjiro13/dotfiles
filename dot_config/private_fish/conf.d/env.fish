@@ -22,6 +22,7 @@ end
 # anyenv
 if [ (command -v anyenv) ]
   set -x ANYENV_DEFINITION_ROOT $XDG_CONFIG_HOME/anyenv/anyenv-install
+  eval (anyenv init - | source)
 end
 
 # docker
