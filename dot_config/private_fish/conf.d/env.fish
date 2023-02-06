@@ -35,6 +35,4 @@ if [ (command arch) = "arm64" ]
 end
 
 # Rust
-if [ (command -v cargo) ]
-  set -x PATH $HOME/.cargo/bin $PATH
-end
+set -x PATH $HOME/.cargo/bin $PATH
