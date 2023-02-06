@@ -16,6 +16,7 @@ rustup component add clippy
 
 {{ if eq .chezmoi.os "darwin" }}
 read -r -d '' PACKAGES <<EOF
+fish
 anyenv
 awscli
 ghq
