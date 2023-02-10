@@ -36,3 +36,7 @@ end
 
 # Rust
 set -x PATH $HOME/.cargo/bin $PATH
+
+# bookmark
+mkdir -p $HOME/.bookmarks
+set -x CDPATH . $HOME/.bookmarks
