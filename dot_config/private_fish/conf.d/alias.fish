@@ -16,6 +16,7 @@ abbr -a ga git add
 abbr -a gb git branch
 abbr -a gcm git commit
 abbr -a gcma git commit --amend
+abbr -a gcmf git commit --fixup
 abbr -a gf git fetch
 abbr -a gs git switch
 abbr -a gr git restore
