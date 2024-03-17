@@ -1,21 +1,22 @@
 [user]
-  name = johnmanjiro13
-  email = 28798279+johnmanjiro13@users.noreply.github.com
+	name = johnmanjiro13
+	email = 28798279+johnmanjiro13@users.noreply.github.com
 [core]
-  excludesfile = /Users/ikumi.nakamura/.gitignore_global
-  autocrlf = input
+	excludesfile = /Users/ikumi.nakamura/.gitignore_global
+	autocrlf = input
+	editor = code --wait
 [alias]
-  l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso -n 30
+	l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso -n 30
 [ghq]
-  root = ~/dev/src
+	root = ~/dev/src
 [fetch]
-  prune = true
+	prune = true
 [pull]
-  prune = true
-  rebase = false
+	prune = true
+	rebase = false
 [url "git@github.com:"]
-  insteadOf = https://github.com/
+	insteadOf = https://github.com/
 [init]
-  defaultBranch = main
+	defaultBranch = main
 [push]
-  autoSetupRemote = true
+	autoSetupRemote = true
