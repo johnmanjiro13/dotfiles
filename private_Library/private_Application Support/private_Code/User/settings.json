@@ -26,12 +26,6 @@
   // go
   "go.formatTool": "goimports",
 
-  // python
-  "python.formatting.provider": "black",
-  "python.formatting.autopep8Path": "",
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-
   // javascript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -63,16 +57,12 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "rust-analyzer.checkOnSave.command": "clippy",
 
   // terraform
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.codeActionsOnSave": {
-      "source.formatAll.terraform": true
+      "source.formatAll.terraform": "explicit"
     }
   },
-
-  // liveshare
-  "liveshare.authenticationProvider": "GitHub"
 }
