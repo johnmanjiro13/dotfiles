@@ -1,9 +1,9 @@
 # alias
 alias bat='bat --style="header,numbers,grid"'
-alias ls='exa --icons --git'
-alias lsa='exa -a --icons --git'
-alias ll='exa -ahl --icons --git'
-alias lt='exa -T -L 3 -a --icons -I "node_modules|.git|.cache"'
+alias ls='eza --icons --git'
+alias lsa='eza -a --icons --git'
+alias ll='eza -ahl --icons --git'
+alias lt='eza -T -L 3 -a --icons -I "node_modules|.git|.cache"'
 
 # abbr
 abbr -a bd cd ..
