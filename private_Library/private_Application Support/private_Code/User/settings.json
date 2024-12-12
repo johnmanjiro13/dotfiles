@@ -4,7 +4,6 @@
     "**/.git": true,
     "**/.DS_Store": true,
     "**/.idea": true,
-    "**/.vscode": true,
     "**/.terraform": true,
     "**/.__pycache__": true
   },
@@ -30,7 +29,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.singleQuote": true,
 
   // typescript
   "[typescript]": {
@@ -58,6 +56,11 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
+  // python
+  "[python]": {
+    "editor.tabSize": 4
+  },
+
   // terraform
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
@@ -65,4 +68,5 @@
       "source.formatAll.terraform": "explicit"
     }
   },
+  "explorer.confirmDelete": false
 }
